@@ -3,6 +3,8 @@
     --accent1-color: #264653;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
+    --usual-text-color: #ffffff;
+    --border-color: #000000;
 }
 
 * {
@@ -75,7 +77,7 @@ h2 {
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--usual-text-color);
 }
 
 /* ARTICLE */
@@ -86,7 +88,7 @@ h2 {
     text-align: center;
     padding: 16px;
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--usual-text-color);
     opacity: 0.9;
 }
 
@@ -100,13 +102,36 @@ h2 {
 .history-content {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
-    gap: 16px;
     align-items: center;
-    padding: 16px;
 }
 
 .history-content img {
     width: 100%;
+    max-width: 200px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.history p:first-of-type {
+    grid-column: 1;
+}
+
+.history img {
+    grid-column: 2;
+    max-width: 200px;
+}
+
+.history p:last-of-type {
+    grid-column: 3;
 }
 
 /* ADVENTURES */
@@ -132,7 +157,7 @@ footer {
     align-items: center;
     margin-top: 20px;
     padding: 10px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--border-color);
 }
 
 .socialmedia {
