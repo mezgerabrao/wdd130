@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us White Water Rafting Splash</title>
+    <title>Contact Us - White Water Rafting Splash</title>
     <meta name="description"
-      content="Whitewater rafting offers thrilling and safe river adventures guided by experts, providing equipment and unforgettable experiences for individuals and groups.">
+      content="Contact Splash White Water Rafting for reservations, general inquiries, or website suggestions. Find our address, phone, email, and team.">
     <meta name="author" content="Mezger Lopes Abrão e Silva">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -31,9 +31,10 @@
             <h1>Contact Us</h1>
             <p>White Water Rafting Company</p>
             <p>123 Main River Street</p>
-            <p>Gardnerville, Nevada</p>
+            <p>Kolob, California</p>
             <p>+1 999 999 9999</p>
-            <p><a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+            <p><a href="mailto:email@exemplo.com">Enviar E-mail</a>
+            </p>
         </section>
 
         <!-- Map + Form Layout -->
@@ -42,14 +43,15 @@
             <!-- Embedded Google Map -->
             <div class="contact-map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.3020438755957!2d-119.74950318864774!3d38.93992759823546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8099bdd5cb9594bb%3A0x402dacdc38783c79!2sMain%20Street%20Gardnerville!5e0!3m2!1spt-BR!2sbr!4v1775343740887!5m2!1spt-BR!2sbr"
-                  width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade">
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-112.16358548468215!3d37.48040957981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca5b4a4d8c2e57%3A0x9b1b3e0f3e4b5e3a!2sKolob%2C%20UT%2084755!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+                  width="100%" height="100%" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="White Water Rafting Company Location">
                 </iframe>
             </div>
 
             <!-- Contact Form -->
-            <div class="contact-form">
+            <form action="#" method="post" class="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your full name" required>
@@ -64,16 +66,19 @@
                 <div class="form-group">
                     <label>Message Purpose</label>
                     <div class="radio-group">
-                        <label class="radio-label">
-                            <input type="radio" name="purpose" value="general" checked>
+                        <label class="radio-label" for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general"
+                              checked>
                             General Inquiry
                         </label>
-                        <label class="radio-label">
-                            <input type="radio" name="purpose" value="reservation">
+                        <label class="radio-label" for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="reservation">
                             Reservation Question
                         </label>
-                        <label class="radio-label">
-                            <input type="radio" name="purpose" value="suggestion">
+                        <label class="radio-label" for="purpose-suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose"
+                              value="suggestion">
                             Website Suggestion
                         </label>
                     </div>
@@ -86,14 +91,14 @@
                 </div>
 
                 <div class="form-group checkbox-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="newsletter" id="newsletter">
+                    <label class="checkbox-label" for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
                         Please subscribe me to the monthly newsletter
                     </label>
                 </div>
 
                 <button type="submit" class="submit-btn">Get in Touch!</button>
-            </div>
+            </form>
 
         </section>
 
